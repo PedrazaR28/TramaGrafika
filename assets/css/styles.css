@@ -272,7 +272,7 @@ input:focus-visible {
 .hero-banner-backdrop {
   position: absolute;
   inset: 0;
-  background-image: url('../assets/images/banner-trama-grafica.png');
+  background-image: url('../images/banner-trama-grafica.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.22;
@@ -379,4 +379,10 @@ input:focus-visible {
 /* Acabado táctil inicial por defecto */
 .lab-overlay-default {
   background: linear-gradient(135deg, rgba(255, 222, 0, 0.25) 0%, transparent 60%);
+}
+
+/* Rendimiento: omitir layout/pintado de secciones fuera de pantalla hasta que se acerquen */
+#catalogo, #muestras, #acabados, #comparativa, #contacto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }
