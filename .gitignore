@@ -1,0 +1,9 @@
+# Desarrollo / respaldos
+_archivo/
+report_*.json
+*.log
+Thumbs.db
+.DS_Store
+node_modules/
+.vercel/
+.env*

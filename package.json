@@ -1,0 +1,1 @@
+{ "name": "tramagrafica", "private": true, "version": "1.0.0", "scripts": { "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.min.css --minify" }, "devDependencies": { "tailwindcss": "3.4.17" } }
